@@ -113,16 +113,13 @@ configurations {
 dependencies {
 	compile 'org.springframework.boot:spring-boot-starter-actuator',
 			'org.springframework.cloud:spring-cloud-starter-config',
-			'org.springframework.cloud:spring-cloud-sleuth-stream',
-			'org.springframework.cloud:spring-cloud-starter-sleuth',
-			'org.springframework.cloud:spring-cloud-starter-stream-rabbit',
 			'org.springframework.boot:spring-boot-starter-data-mongodb-reactive',
 			'org.springframework.boot:spring-boot-starter-data-redis-reactive',
 			'org.springframework.boot:spring-boot-starter-integration',
-			"org.springframework.integration:spring-integration-amqp",
 			"org.springframework.integration:spring-integration-mongodb",
 			'org.springframework.retry:spring-retry',
 			'org.springframework.boot:spring-boot-starter-webflux',
+			'org.springframework.boot:spring-boot-starter-tomcat',
 			"org.springframework.boot:spring-boot-devtools",
 			'com.fasterxml.jackson.datatype:jackson-datatype-joda',
 			'joda-time:joda-time:2.9.9',
@@ -132,7 +129,6 @@ dependencies {
 	compileOnly 'org.projectlombok:lombok:1.16.18'
 	testCompile 'org.springframework.boot:spring-boot-starter-test',
 			'io.projectreactor:reactor-test',
-			'org.apache.qpid:qpid-broker:6.1.2',
 			'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
 
 	integTestCompile sourceSets.main.output
