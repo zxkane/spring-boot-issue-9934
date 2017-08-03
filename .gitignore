@@ -1,0 +1,17 @@
+/bin/
+/classes/
+/out/
+.gradle/
+build/
+.classpath
+.project
+.java-version
+*.log*
+src/main/resources/rebel.xml
+.gradletasknamecache
+rebel.xml
+.idea/
+*.iml
+*.ipr
+*.iws
+.settings/
